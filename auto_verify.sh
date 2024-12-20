@@ -14,7 +14,7 @@ if [ -z "$1" ]; then
 fi
 
 BASE_DIR="$1"
-PROGRAM="/path/to/verifyio.py"
+PROGRAM="$2"
 SEMANTICS=("POSIX" "MPI-IO" "Commit" "Session")
 
 for semantic in "${SEMANTICS[@]}"; do
