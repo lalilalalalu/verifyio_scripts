@@ -1,5 +1,5 @@
-# Verify if I/O operations are properly synchronized under specific storage-semantics
-
+# VerifyIO
+VerifyIO collects execution traces, detects data conflicts, and verifies proper synchronization against specified consistency models. 
 The workflow for VerifyIO can generally be divided into three independent steps (Step 1 and Step 3). This process requires [Recorder](https://github.com/uiuc-hpc/Recorder/tree/dev), [VerifyIO](https://github.com/uiuc-hpc/Recorder/tree/dev/tools/verifyio), and the corresponding traces. Make sure `$RECORDER_INSTALL_PATH` is the install location of Recorder. Additional scripts are available for exporting results as CSV files and visualizing them (Step 4 and Step 5). The verification can be performed in a batched manner for multiple traces. For this, alternative steps can be followed to handle multiple traces more efficiently.
 
 ## Step 1:  Run program with Recorder to generate traces.
