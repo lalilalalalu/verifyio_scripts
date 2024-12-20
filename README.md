@@ -6,9 +6,16 @@ Make sure `$RECORDER_INSTALL_PATH` is the install location of Recorder.
 
 Additional scripts are available for exporting results as CSV files and visualizing them (Step 4 and Step 5). The verification can be performed in a batched manner for multiple traces. For this, alternative steps can be followed to handle multiple traces more efficiently.
 
-## Step 1:  Run program with Recorder to generate traces.
+## Step 1:  Run the application with Recorder to generate traces.
 
+```bash
+mpirun -np N -env LD_PRELOAD $RECORDER_INSTALL_PATH/lib/librecorder.so ./test_mpi
 
+# On HPC systems, you may need to use srun or
+# other job schedulers to replace mpirun, e.g.,
+srun -n4 -N1 --overlap --export=ALL,LD_PRELOAD=$RECORDER_INSTALL_PATH/lib/librecorder.so ./test_mpi
+```
+For detailed information on the Recorder and guidance on its usage, please refer to: https://recorder.readthedocs.io/latest/overview.html
 
 ## Step 2: Conflict Detection
 Run the conflict detector to report **potential** conflicting I/O accesses. Those acesses are only potentially conflicting as here we do not take happens-before order into consideration yet.
