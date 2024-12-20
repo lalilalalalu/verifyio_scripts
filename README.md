@@ -33,6 +33,15 @@ Alternatively, the [`auto_verify.sh`](https://github.com/lalilalalalu/verifyio_s
 ./auto_verify.sh /path/to/target/traces
 ```
 
+Before running step 3 and 4, ensure the following dependencies are installed:
+
+### Python Libraries
+- **argparse**: For parsing command-line arguments.
+- **pandas**: For data manipulation and analysis. Install using `pip install pandas`.
+- **seaborn**: For advanced data visualization. Install using `pip install seaborn`.
+- **matplotlib**: For creating static, animated, and interactive plots. Install using `pip install matplotlib`.
+- **numpy**: For numerical computations. Install using `pip install numpy`.
+
 ## Step 3: Export Results to CSV
 
 VerifyIO results can be exported to a CSV format for further analysis by using [`verifyio_to_csv.py `](https://github.com/lalilalalalu/verifyio_scripts/blob/main/verifyio_to_csv.py). Use the following command, providing the output file (usually stdout from VerifyIO execution) as an argument:
