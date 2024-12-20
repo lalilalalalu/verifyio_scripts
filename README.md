@@ -27,7 +27,7 @@ Available arguments:
 * --show_summary: Displays a summary of the conflicts.
 * --show_full_chain: Displays the full call chain of the conflicts.
 
-Alternatively, the [`auto_verify.sh`](https://github.com/lalilalalalu/verifyio_scripts/blob/main/auto_verify.sh) script can be used for verification. This script requires the path to the directory containing the traces as an argument. By default, it verifies all supported semantics.
+Alternatively, the [`auto_verify.sh`](https://github.com/lalilalalalu/verifyio_scripts/blob/main/auto_verify.sh) script can be used for verification. This script requires the path to the directory containing the traces, and the path to verifyio as arguments. By default, it verifies all supported semantics, i.e., POSIX, MPI-IO, Commit, Session with Vector clock algorithm.
 
 ```bash
 ./auto_verify.sh /path/to/target/traces /path/to/verifyio.py
