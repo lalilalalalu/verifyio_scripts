@@ -30,7 +30,7 @@ Available arguments:
 Alternatively, the [`auto_verify.sh`](https://github.com/lalilalalalu/verifyio_scripts/blob/main/auto_verify.sh) script can be used for verification. This script requires the path to the directory containing the traces as an argument. By default, it verifies all supported semantics.
 
 ```bash
-./auto_verify.sh /path/to/target/traces
+./auto_verify.sh /path/to/target/traces /path/to/verifyio.py
 ```
 
 Before running step 3 and 4, ensure the following dependencies are installed:
