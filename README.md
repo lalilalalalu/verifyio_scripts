@@ -35,7 +35,7 @@ Alternatively, the [`auto_detect.sh`](https://github.com/lalilalalalu/verifyio_s
 ## Step 3: Semantic Verification
 The next step is to run the semantic verification using [`verifyio.py`](https://github.com/uiuc-hpc/Recorder/tree/dev/tools/verifyio). It checks if those potential conflicting operations are properly synchronzied. By default, MPI-IO semantics and the vector clock algorithm are used for verification.
 
-### Dependency for step 4 & 5:
+### Dependencies for step 3:
 
 Ensure the following dependencies are installed:
 
@@ -82,7 +82,7 @@ Now, given two potential conflicting accesses op1 an op2, our job is to find out
 
 ## Step 4: Export Results to CSV
 
-### Dependency for step 4 & 5:
+### Dependencies for step 4 & 5:
 
 Ensure the following dependencies are installed:
 
