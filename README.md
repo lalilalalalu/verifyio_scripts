@@ -1,3 +1,5 @@
+The workflow for VerifyIO can generally be divided into two independent steps (Step 1 and Step 2). This process requires [Recorder](https://github.com/uiuc-hpc/Recorder/tree/dev), [VerifyIO](https://github.com/uiuc-hpc/Recorder/tree/dev/tools/verifyio), and the corresponding traces. Additional scripts are available for exporting results as CSV files and visualizing them (Step 3 and Step 4). The verification can be performed in a batched manner for multiple traces. For this, alternative steps can be followed to handle multiple traces more efficiently.
+
 ## Step 1: Conflict Detection
 To detect conflicts, use the `conflict-detector` tool from Recorder:
 
