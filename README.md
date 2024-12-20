@@ -5,14 +5,14 @@ To detect conflicts, use the `conflict-detector` tool from Recorder:
 $RECORDER_INSTALL_PATH/bin/conflict-detector /path/to/trace
 ```
 
-Alternatively, the `auto_detect.sh` script can be used to process multiple traces and detect conflicts. The script requires the path to the directory containing the traces as an argument. The conflict files will be added to the corresponding directories after execution.
+Alternatively, the [`auto_detect.sh`](https://github.com/lalilalalalu/verifyio_scripts/blob/main/auto_detect.sh)  script can be used to process multiple traces and detect conflicts. The script requires the path to the directory containing the traces as an argument. The conflict files will be added to the corresponding directories after execution.
 
 ```bash
 ./auto_detect.sh /path/to/target/traces
 ```
 
 ## Step 2: Semantic Verification
-The next step is to run the semantic verification using `verifyio.py`. By default, MPI-IO semantics and the vector clock algorithm are used for verification.
+The next step is to run the semantic verification using [`verifyio.py`](). By default, MPI-IO semantics and the vector clock algorithm are used for verification.
 
 ```bash
 python /path/to/verifyio.py /path/to/trace
@@ -25,7 +25,7 @@ Available arguments:
 * --show_summary: Displays a summary of the conflicts.
 * --show_full_chain: Displays the full call chain of the conflicts.
 
-Alternatively, the `auto_verify.sh` script can be used for verification. This script requires the path to the directory containing the traces as an argument. By default, it verifies all supported semantics.
+Alternatively, the [`auto_verify.sh`](https://github.com/lalilalalalu/verifyio_scripts/blob/main/auto_verify.sh) script can be used for verification. This script requires the path to the directory containing the traces as an argument. By default, it verifies all supported semantics.
 
 ```bash
 ./auto_verify.sh /path/to/target/traces
@@ -33,7 +33,7 @@ Alternatively, the `auto_verify.sh` script can be used for verification. This sc
 
 ## Step 3: Export Results to CSV
 
-VerifyIO results can be exported to a CSV format for further analysis by using `verifyio_to_csv.py `. Use the following command, providing the output file (usually stdout from VerifyIO execution) as an argument:
+VerifyIO results can be exported to a CSV format for further analysis by using [`verifyio_to_csv.py `](https://github.com/lalilalalalu/verifyio_scripts/blob/main/verifyio_to_csv.py). Use the following command, providing the output file (usually stdout from VerifyIO execution) as an argument:
 
 ```bash
 python verifyio_to_csv.py /path/to/verifyio/output /path/to/output.csv
@@ -44,7 +44,7 @@ Optional arguments:
 
 ## Step 4: Heatmap Visualization
 
-To visualize the results from VerifyIO, use the `verifyio_plot_heatmap.py` script:
+To visualize the results from VerifyIO, use the [`verifyio_plot_heatmap.py`](https://github.com/lalilalalalu/verifyio_scripts/blob/main/verifyio_plot_violation_heatmap.py) script:
 
 ```bash
 python verifyio_plot_heatmap.py --file=/path/to/output.csv
