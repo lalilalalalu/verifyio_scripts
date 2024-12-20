@@ -1,6 +1,6 @@
 # VerifyIO
 VerifyIO collects execution traces, detects data conflicts, and verifies proper synchronization against specified consistency models. 
-The workflow for VerifyIO can generally be divided into three independent steps (Step 1 and Step 3). This process requires [Recorder](https://github.com/uiuc-hpc/Recorder/tree/dev), [VerifyIO](https://github.com/uiuc-hpc/Recorder/tree/dev/tools/verifyio), and the corresponding traces.
+The workflow for VerifyIO can generally be divided into three independent steps (Step 1 - Step 3). This process requires [Recorder](https://github.com/uiuc-hpc/Recorder/tree/dev), [VerifyIO](https://github.com/uiuc-hpc/Recorder/tree/dev/tools/verifyio), and the corresponding traces.
 
 Make sure `$RECORDER_INSTALL_PATH` is the install location of Recorder. 
 
